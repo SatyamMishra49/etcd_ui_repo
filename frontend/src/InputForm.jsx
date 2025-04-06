@@ -77,14 +77,12 @@ export default function SignUpForm() {
                     {/* Form */}
                     <Box component="form" noValidate autoComplete="off">
                         <Grid container spacing={2}>
-                            <Grid item xs={12}>
-                                <TextField
-                                    fullWidth
-                                    label="Client Id *"
-                                    variant="outlined"
-                                />
-                            </Grid>
-
+                            <TextField
+                                fullWidth
+                                required
+                                id="outlined-required"
+                                label="Required"
+                            />
                             <TextField
                                 fullWidth
                                 required
