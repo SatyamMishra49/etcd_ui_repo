@@ -17,7 +17,7 @@ import SendIcon from "@mui/icons-material/Send";
 
 import { styled } from "@mui/material/styles";
 import PersonAddAltIcon from "@mui/icons-material/PersonAddAlt";
-import logo from "./assets/edtc-icon.svg";
+import logo from "./assets/mesh.io.svg";
 
 const StyledCard = styled(Card)(({ theme }) => ({
     maxWidth: 480,
@@ -56,10 +56,10 @@ export default function SignUpForm() {
                         <img
                             src={logo}
                             alt="Logo"
-                            style={{ width: 40, height: 40 }}
+                            style={{ width: 50, height: 50 }}
                         />
                         <Typography variant="h6" fontWeight="bold">
-                            etcd
+                            mesh.io
                         </Typography>
                     </Box>
 
@@ -84,38 +84,31 @@ export default function SignUpForm() {
                                     variant="outlined"
                                 />
                             </Grid>
-                            <Grid item xs={12}>
-                                <TextField
-                                    fullWidth
-                                    label="Service Id *"
-                                    type="email"
-                                    variant="outlined"
-                                />
-                            </Grid>
-                            <Grid item xs={12}>
-                                <TextField
-                                    fullWidth
-                                    label="Service Type *"
-                                    type="email"
-                                    variant="outlined"
-                                />
-                            </Grid>
-                            <Grid item xs={12}>
-                                <TextField
-                                    fullWidth
-                                    label="Mail Id *"
-                                    type="email"
-                                    variant="outlined"
-                                />
-                            </Grid>
-                            <Grid item xs={12}>
-                                <TextField
-                                    fullWidth
-                                    label="Metadata *"
-                                    type="text"
-                                    variant="outlined"
-                                />
-                            </Grid>
+
+                            <TextField
+                                fullWidth
+                                required
+                                id="outlined-required"
+                                label="Required"
+                            />
+                            <TextField
+                                fullWidth
+                                required
+                                id="outlined-required"
+                                label="Required"
+                            />
+                            <TextField
+                                fullWidth
+                                required
+                                id="outlined-required"
+                                label="Required"
+                            />
+                            <TextField
+                                fullWidth
+                                required
+                                id="outlined-required"
+                                label="Required"
+                            />
                             <Grid item xs={12}>
                                 <FormControlLabel
                                     control={<Checkbox />}
